@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+/* HERO */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1400');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #e8b84b;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1rem;
+  color: #cccccc;
+  font-weight: normal;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #ffffff;
+  max-width: 520px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero button {
+  padding: 12px 35px;
+  background-color: #e8b84b;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #d4a030;
+}
+
+/* FEATURES */
+.features {
+  background-color: #16213e;
+  padding: 50px 40px;
+}
+
+.features h2 {
+  color: #e8b84b;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.features-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #0f3460;
+  border-radius: 8px;
+  padding: 25px 20px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  color: #e8b84b;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.feature-card p {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* VISUAL SECTION */
+.visual {
+  background-color: #1a1a2e;
+  padding: 50px 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.visual-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.visual-text h2 {
+  color: #e8b84b;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.visual-text p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.visual-image {
+  flex: 1;
+  min-width: 250px;
+}
+
+.visual-image img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #e8b84b;
+}
+
+/* HOW IT WORKS */
+.how {
+  background-color: #16213e;
+  padding: 50px 40px;
+}
+
+.how h2 {
+  color: #e8b84b;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.step-num {
+  background-color: #e8b84b;
+  color: #1a1a2e;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+
+/* INFO / BENEFITS */
+.info {
+  background-color: #1a1a2e;
+  padding: 50px 40px;
+}
+
+.info h2 {
+  color: #e8b84b;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.info ul li::before {
+  content: "✔";
+  color: #e8b84b;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* CTA SECTION */
+.cta-section {
+  background-color: #0f3460;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: #e8b84b;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  max-width: 500px;
+  margin: 0 auto 25px auto;
+}
+
+.cta-section button {
+  padding: 14px 40px;
+  background-color: #e8b84b;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cta-section button:hover {
+  background-color: #d4a030;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0d0d1a;
+  text-align: center;
+  padding: 20px;
+  color: #888888;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+  }
+
+  .visual {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
