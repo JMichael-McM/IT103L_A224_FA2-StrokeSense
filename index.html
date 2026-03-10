@@ -3,103 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StrokeSense</title>
+  <title>StrokeSense — Learn Baybayin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">Stroke<span>Sense</span></div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#info">Benefits</a></li>
+    </ul>
+    <a href="#cta" class="nav-cta">Get Started</a>
+  </nav>
+
   <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>StrokeSense</h1>
-    <h2>LEARN BAYBAYIN THE SMART AND FUN WAY</h2>
-    <p>A web-based AI handwriting game that teaches you Baybayin through interactive practice, instant feedback, and gamified challenges.</p>
-    <button>Start Learning</button>
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Ancient Script · Modern Learning</div>
+      <h1>Stroke<em>Sense</em></h1>
+      <h2>LEARN BAYBAYIN THE SMART AND FUN WAY</h2>
+      <p>A web-based AI handwriting game that teaches you Baybayin through interactive practice, instant feedback, and gamified challenges.</p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn-primary">Start Learning</a>
+        <a href="#features" class="btn-outline">Explore Features</a>
+      </div>
+    </div>
+    <div class="hero-scroll">↓</div>
   </section>
 
   <!-- FEATURES SECTION -->
-  <section class="features">
-    <h2>Key Features</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="icon">✍️</div>
-        <h3>Handwriting Practice</h3>
-        <p>Draw Baybayin characters using your mouse, touchscreen, or stylus.</p>
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">What We Offer</span>
+        <h2>Key Features</h2>
+        <p>Everything you need to master Baybayin — from your very first stroke.</p>
       </div>
-      <div class="feature-card">
-        <div class="icon">🤖</div>
-        <h3>AI Feedback</h3>
-        <p>Get instant feedback on stroke accuracy, order, and form.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon">🎮</div>
-        <h3>Gamified Levels</h3>
-        <p>Earn points, unlock badges, and advance through fun challenges.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon">📜</div>
-        <h3>Cultural Insights</h3>
-        <p>Learn the history and meaning behind each Baybayin character.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">✍️</div>
+          <h3>Handwriting Practice</h3>
+          <p>Draw Baybayin characters using your mouse, touchscreen, or stylus on an interactive canvas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🤖</div>
+          <h3>AI Feedback</h3>
+          <p>Get instant, precise feedback on stroke accuracy, order, and form with no waiting.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎮</div>
+          <h3>Gamified Levels</h3>
+          <p>Earn points, unlock badges, and advance through progressively challenging stages.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📜</div>
+          <h3>Cultural Insights</h3>
+          <p>Discover the history and meaning behind each Baybayin character and connect with Filipino heritage.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- VISUAL SECTION -->
-  <section class="visual">
-    <div class="visual-text">
-      <h2>Learn Baybayin Like Never Before</h2>
-      <p>StrokeSense combines education, AI technology, and gamification to make learning Baybayin not only effective but also enjoyable.</p>
-      <p>Unlike worksheets or textbooks, StrokeSense actively guides the learner — highlighting mistakes and showing how to correct them in real time.</p>
-    </div>
-    <div class="visual-image">
-      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="Learning visual">
+  <section class="visual" id="about">
+    <div class="container visual-inner">
+      <div class="visual-image">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700" alt="Learning visual">
+      </div>
+      <div class="visual-text">
+        <span class="section-tag">Why StrokeSense</span>
+        <h2>Learn Baybayin Like Never Before</h2>
+        <p>StrokeSense combines education, AI technology, and gamification to make learning Baybayin not only effective but genuinely enjoyable.</p>
+        <p>Unlike worksheets or textbooks, StrokeSense <strong>actively guides the learner</strong> — highlighting mistakes and showing corrections in real time, stroke by stroke.</p>
+        <a href="#cta" class="btn-primary">Try It Now</a>
+      </div>
     </div>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="how">
-    <h2>How It Works</h2>
-    <ol class="steps">
-      <li>
-        <div class="step-num">1</div>
-        <span>Sign up on the web platform — no download needed.</span>
-      </li>
-      <li>
-        <div class="step-num">2</div>
-        <span>Begin handwriting exercises using your mouse, touchscreen, or stylus.</span>
-      </li>
-      <li>
-        <div class="step-num">3</div>
-        <span>Follow the AI feedback and complete levels and challenges.</span>
-      </li>
-      <li>
-        <div class="step-num">4</div>
-        <span>Track your progress, celebrate milestones, and unlock advanced characters.</span>
-      </li>
-    </ol>
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Getting Started</span>
+        <h2>How It Works</h2>
+        <p>Up and running in minutes — no downloads, no experience required.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Sign Up</h4>
+            <span>Create your free account on the web platform — no app download needed.</span>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>Start Drawing</h4>
+            <span>Begin handwriting exercises using your mouse, touchscreen, or stylus.</span>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Get Feedback</h4>
+            <span>Follow AI guidance and complete levels and challenges at your own pace.</span>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Track Progress</h4>
+            <span>Celebrate milestones, earn certificates, and unlock advanced characters.</span>
+          </div>
+        </li>
+      </ol>
+    </div>
   </section>
 
   <!-- INFO / BENEFITS SECTION -->
-  <section class="info">
-    <h2>Why Choose StrokeSense?</h2>
-    <ul>
-      <li>Learn faster with AI guidance that corrects your strokes immediately</li>
-      <li>Stay motivated through points, badges, and level-based challenges</li>
-      <li>Build confidence by seeing your progress over time</li>
-      <li>Preserve Filipino culture by learning authentic Baybayin characters</li>
-      <li>Accessible anytime, anywhere on computers, tablets, and touchscreens</li>
-    </ul>
+  <section class="info" id="info">
+    <div class="container info-inner">
+      <div class="info-head">
+        <span class="section-tag">Why Choose Us</span>
+        <h2>Everything You Need to Succeed</h2>
+        <p>StrokeSense is built from the ground up for learners of all ages and backgrounds.</p>
+      </div>
+      <ul class="benefits-list">
+        <li>
+          <div class="check">✔</div>
+          <div>
+            <strong>Learn Faster</strong>
+            <p>AI guidance corrects your strokes immediately, building correct muscle memory from day one.</p>
+          </div>
+        </li>
+        <li>
+          <div class="check">✔</div>
+          <div>
+            <strong>Stay Motivated</strong>
+            <p>Points, badges, and level-up challenges keep every session engaging and rewarding.</p>
+          </div>
+        </li>
+        <li>
+          <div class="check">✔</div>
+          <div>
+            <strong>Preserve Filipino Culture</strong>
+            <p>Connect with your heritage by learning authentic, historically accurate Baybayin.</p>
+          </div>
+        </li>
+        <li>
+          <div class="check">✔</div>
+          <div>
+            <strong>Learn Anywhere</strong>
+            <p>Fully accessible on desktop, tablet, and touchscreens — whenever, wherever you are.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <!-- CTA SECTION -->
-  <section class="cta-section">
-    <h2>Start Writing Baybayin Today</h2>
-    <p>Join StrokeSense and discover the beauty of the ancient Filipino script — one stroke at a time.</p>
-    <button>Sign Up for Free</button>
+  <section class="cta-section" id="cta">
+    <div class="cta-bg">ᜊᜌ᜔ᜊᜌᜒᜈ᜔</div>
+    <div class="container cta-content">
+      <span class="section-tag light">Start Today</span>
+      <h2>Begin Your Baybayin Journey</h2>
+      <p>Join StrokeSense and discover the beauty of the ancient Filipino script — one stroke at a time.</p>
+      <a href="#" class="btn-primary large">Sign Up for Free</a>
+      <p class="cta-note">No credit card required · Free forever for beginners</p>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 StrokeSense. All rights reserved. | IT103 Case Study 3</p>
+    <div class="container footer-inner">
+      <div class="footer-logo">Stroke<span>Sense</span></div>
+      <p>Preserving Filipino heritage through modern, AI-powered education.</p>
+      <p class="footer-copy">&copy; 2025 StrokeSense. All rights reserved. | IT103 Case Study 3</p>
+    </div>
   </footer>
 
 </body>
